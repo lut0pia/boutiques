@@ -29,9 +29,26 @@ async function fetch_json(url) {
     const shops_element = document.getElementById('shops');
     for(let shop of shops) {
         shop.tags = shop.tags || [];
+        shop.websites = shop.websites || [];
+        
+        const shop_name_element = document.createElement('name');
+        shop_name_element.innerText = shop.name;
+        
+        const shop_address_element = document.createElement('address');
+        shop_address_element.innerText = shop.address;
+
+        const shop_websites_element = document.createElement('websites');
+        for(let website of shop.websites) {
+            const shop_website_element = document.createElement('a');
+            shop_website_element.innerText =  shop_website_element.href = website;
+            shop_websites_element.appendChild(shop_website_element);
+        }
+        
         const shop_element = document.createElement('shop');
-        shop_element.innerText = shop.name;
         shop.element = shop_element;
+        shop_element.appendChild(shop_name_element);
+        shop_element.appendChild(shop_address_element);
+        shop_element.appendChild(shop_websites_element);
         shops_element.appendChild(shop_element);
     }
 

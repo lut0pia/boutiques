@@ -1,7 +1,19 @@
+body {
+  max-width: 512px;
+  margin: auto;
+}
+
 shop {
   display: none;
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 10px;
 }
 
 shop.filtered {
   display: block;
+}
+
+shop name {
+  font-weight: bold;
 }
