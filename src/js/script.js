@@ -10,16 +10,17 @@ async function fetch_json(url) {
     const search_text_element = document.getElementById('search_text');
     const search_tags_element = document.getElementById('search_tags');
     const search_button_element = document.getElementById('search_button');
-    for(let tag of Object.keys(tags).sort()) {
-        const search_tag_id = `search_${tag}`;
+    for(let tag_name of Object.keys(tags).sort()) {
+        const tag = tags[tag_name];
+        const search_tag_id = `search_${tag_name}`;
         const search_tag_input_element = document.createElement('input');
         search_tag_input_element.id = search_tag_id;
         search_tag_input_element.type = 'checkbox';
-        tags[tag].input = search_tag_input_element;
+        tags[tag_name].input = search_tag_input_element;
 
         const search_tag_label_element = document.createElement('label');
         search_tag_label_element.htmlFor = search_tag_id;
-        search_tag_label_element.innerText = tag;
+        search_tag_label_element.innerText = `${tag.icon || ''} ${tag_name}`;
 
         const search_tag_element = document.createElement('tag');
         search_tag_element.appendChild(search_tag_input_element);

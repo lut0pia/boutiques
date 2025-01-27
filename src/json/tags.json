@@ -1,12 +1,30 @@
 {
     "madeinfrance": {
+        "icon": "🇫🇷",
         "description": ""
     },
-    "creators": {},
-    "chain": {},
-    "thrift": {},
-    "british": {},
-    "vegan":{},
-    "colorful":{},
-    "japanese":{}
+    "creators": {
+        "icon": "🧑‍🎨"
+    },
+    "chain": {
+        "icon": "🔗"
+    },
+    "thrift": {
+        "icon": "♻️"
+    },
+    "british": {
+        "icon": "🇬🇧"
+    },
+    "vegan":{
+        "icon": "🥦"
+    },
+    "colorful":{
+        "icon": "🎨"
+    },
+    "japanese":{
+        "icon": "🇯🇵"
+    },
+    "sexy": {
+        "icon": "😏"
+    }
 }
