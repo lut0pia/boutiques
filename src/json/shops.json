@@ -1,0 +1,137 @@
+[
+    {
+        "name": "The Rolling Shop",
+        "tags": ["madeinfrance", "creators"],
+        "address": "1 Bd du Temple, 75003 Paris",
+        "websites": ["https://therollingshop.com/"],
+        "items": {
+            "top": {},
+            "bottom": {},
+            "overalls": {},
+            "coat": {}
+        }
+    },
+    {
+        "name": "Kiloshop République",
+        "tags": ["chain", "thrift"],
+        "address": "23 Rue du Faubourg du Temple, 75010 Paris",
+        "items": {
+            "top": {},
+            "bottom": {},
+            "scarf": {},
+            "dress": {},
+            "overalls": {}
+        }
+    },
+    {
+        "name": "Roganel",
+        "tags": ["british"],
+        "address": "23 Rue des Archives, 75004 Paris",
+        "websites": ["https://www.instagram.com/roganel75004/"],
+        "items": {
+            "top": {},
+            "pants": {},
+            "coat": {},
+            "bag": {},
+            "gloves": {},
+            "scarf": {}
+        }
+    },
+    {
+        "name": "Aujourd'hui Demain",
+        "tags": ["vegan"],
+        "address": "42 Rue du Chemin Vert, 75011 Paris",
+        "websites": ["http://www.aujourdhui-demain.com/"],
+        "items": {
+            "overalls": {},
+            "shoes": {},
+            "socks": {},
+            "top": {},
+            "bottom": {},
+            "bag": {},
+            "bottom_underwear": {}
+        }
+    },
+    {
+        "name": "Misericordia",
+        "tags": ["chain"],
+        "address": "97 Rue Oberkampf, 75011 Paris",
+        "websites": ["https://www.misericordia.shop/"],
+        "items": {
+            "top": {},
+            "bottom": {}
+        }
+    },
+    {
+        "name": "Thanx God I'm a V.I.P.",
+        "address": "12 Rue de Lancry, 75010 Paris",
+        "websites": ["https://www.thanxgod.com/"]
+    },
+    {
+        "name": "Maison Labiche",
+        "tags": ["colorful"],
+        "address": "105 Rue Vieille du Temple, 75003 Paris",
+        "websites": ["http://www.maisonlabiche.com/"]
+    },
+    {
+        "name": "LE CARTEL",
+        "tags": ["colorful"],
+        "address": "97 Rue de Turenne, 75003 Paris",
+        "websites": ["http://lecartelclothing.fr/"]
+    },
+    {
+        "name": "26 BRUMAIRE",
+        "tags": ["colorful"],
+        "address": "26 Av. de la République, 75011 Paris"
+    },
+    {
+        "name": "Les Dessous d'Apollon",
+        "tags": ["colorful", "sexy"],
+        "address": "8 Rue de Moussy, 75004 Paris",
+        "websites": ["https://www.inderwear.com/content/11-magasin-dessous-apollon"],
+        "items": {
+            "underwear": {},
+            "overalls": {}
+        }
+    },
+    {
+        "name": "Albertine",
+        "address": "14 Rue du Pont aux Choux, 75003 Paris",
+        "websites": ["http://albertine-swim.com/"],
+        "items": {
+            "swimwear": {}
+        }
+    },
+    {
+        "name": "ACABA Gantier",
+        "tags": ["colorful"],
+        "address": "41 Rue des Petits Champs, 75001 Paris",
+        "items": {
+            "gloves": {
+                "price": {
+                    "min": 45,
+                    "max": 130
+                }
+            }
+        }
+    },
+    {
+        "name": "Coton Doux",
+        "tags": ["colorful", "chain"],
+        "address": "3 Rue Sainte-Croix de la Bretonnerie, 75004 Paris",
+        "websites": ["http://www.cotondoux.com/"],
+        "items": {
+            "shirt": {},
+            "socks": {}
+        }
+    },
+    {
+        "name": "Gaijin Paris",
+        "tags": ["japanese"],
+        "address": "20 Rue du Pont aux Choux, 75003 Paris",
+        "items": {
+            "top": {},
+            "bottom": {}
+        }
+    }
+]
