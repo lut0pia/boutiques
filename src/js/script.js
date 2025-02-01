@@ -35,6 +35,19 @@ async function fetch_json(url) {
         const shop_name_element = document.createElement('name');
         shop_name_element.innerText = shop.name;
         
+        const shop_tags_element = document.createElement('tags');
+        for(let tag of shop.tags) {
+            const shop_tag_element = document.createElement('tag');
+            const shop_tag_icon = document.createElement('icon');
+            shop_tag_icon.innerText = tags[tag].icon;
+            shop_tag_icon.title = tag;
+            const shop_tag_name = document.createElement('name');
+            shop_tag_name.innerText = tag;
+            shop_tag_element.appendChild(shop_tag_icon);
+            shop_tag_element.appendChild(shop_tag_name);
+            shop_tags_element.appendChild(shop_tag_element);
+        }
+        
         const shop_address_element = document.createElement('address');
         shop_address_element.innerText = shop.address;
 
@@ -48,6 +61,7 @@ async function fetch_json(url) {
         const shop_element = document.createElement('shop');
         shop.element = shop_element;
         shop_element.appendChild(shop_name_element);
+        shop_element.appendChild(shop_tags_element);
         shop_element.appendChild(shop_address_element);
         shop_element.appendChild(shop_websites_element);
         shops_element.appendChild(shop_element);

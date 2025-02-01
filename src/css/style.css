@@ -15,6 +15,19 @@ shop.filtered {
   display: block;
 }
 
-shop name {
+shop > name {
   font-weight: bold;
+}
+
+shop tags {
+  float: right;
+  display: block;
+}
+
+shop tag  {
+  margin-left: 4px;
+}
+
+shop tag name:not(.extended) {
+  display: none;
 }
