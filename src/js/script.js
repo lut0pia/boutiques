@@ -9,7 +9,6 @@ async function fetch_json(url) {
 
     const search_text_element = document.getElementById('search_text');
     const search_tags_element = document.getElementById('search_tags');
-    const search_button_element = document.getElementById('search_button');
     for(let tag_name of Object.keys(tags).sort()) {
         const tag = tags[tag_name];
         const search_tag_id = `search_${tag_name}`;
@@ -20,7 +19,7 @@ async function fetch_json(url) {
 
         const search_tag_label_element = document.createElement('label');
         search_tag_label_element.htmlFor = search_tag_id;
-        search_tag_label_element.innerText = `${tag.icon || ''} ${tag_name}`;
+        search_tag_label_element.innerText = `${tag.icon || ''} ${tag.name}`;
 
         const search_tag_element = document.createElement('tag');
         search_tag_element.appendChild(search_tag_input_element);
@@ -40,9 +39,9 @@ async function fetch_json(url) {
             const shop_tag_element = document.createElement('tag');
             const shop_tag_icon = document.createElement('icon');
             shop_tag_icon.innerText = tags[tag].icon;
-            shop_tag_icon.title = tag;
+            shop_tag_icon.title = tags[tag].name;
             const shop_tag_name = document.createElement('name');
-            shop_tag_name.innerText = tag;
+            shop_tag_name.innerText = tags[tag].name;
             shop_tag_element.appendChild(shop_tag_icon);
             shop_tag_element.appendChild(shop_tag_name);
             shop_tags_element.appendChild(shop_tag_element);
@@ -57,6 +56,11 @@ async function fetch_json(url) {
             shop_website_element.innerText =  shop_website_element.href = website;
             shop_websites_element.appendChild(shop_website_element);
         }
+
+        const shop_expand_button = document.createElement('expand');
+        shop_expand_button.addEventListener('click', e => {
+            shop.element.classList.toggle("expanded");
+        });
         
         const shop_element = document.createElement('shop');
         shop.element = shop_element;
@@ -64,6 +68,7 @@ async function fetch_json(url) {
         shop_element.appendChild(shop_tags_element);
         shop_element.appendChild(shop_address_element);
         shop_element.appendChild(shop_websites_element);
+        shop_element.appendChild(shop_expand_button);
         shops_element.appendChild(shop_element);
     }
 
@@ -88,10 +93,10 @@ async function fetch_json(url) {
         }
     };
 
-    search_text_element.addEventListener('keydown', e => {
-        if(e.key === 'Enter') {
-            search();
-        }
-    });
-    search_button_element.addEventListener('click', e => search());
+    search_text_element.addEventListener('input', search);
+    for(let tag of Object.values(tags)) {
+        tag.input.addEventListener('change', search);
+    }
+
+    search();
 })();

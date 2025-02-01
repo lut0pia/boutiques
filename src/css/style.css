@@ -1,14 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 body {
   max-width: 512px;
   margin: auto;
   padding: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#search_text {
+  border: solid 1px #4989ee;
+  border-radius: 10px;
+  padding: 5px;
+  width: calc(100% - 12px);
+  margin-bottom: 4px;
+}
+
+#search_tags tag {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px 8px;
+  background-color: #4989ee;
+  border-radius: 10px;
+}
+
+#search_tags input {
+  margin-right: 5px;
 }
 
 shop {
   display: none;
-  border: 1px solid black;
+  border: 1px solid #4989ee;
   margin: 10px 0px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 shop.filtered {
@@ -24,10 +48,36 @@ shop tags {
   display: block;
 }
 
-shop tag  {
+shop tag {
   margin-left: 4px;
 }
 
-shop tag name:not(.extended) {
+shop.expanded tag {
+  border: solid 1px #4989ee;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
+
+shop:not(.expanded) tag name {
   display: none;
+}
+
+shop tag name {
+  margin-left: 4px;
+}
+
+shop expand {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #4989ee;
+  cursor: pointer;
+}
+
+shop expand::before {
+  content: "▾";
+}
+
+shop.expanded expand::before {
+  content: "▴";
 }
