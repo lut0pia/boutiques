@@ -57,6 +57,10 @@ async function fetch_json(url) {
             shop_websites_element.appendChild(shop_website_element);
         }
 
+        const shop_map_element = document.createElement('iframe');
+        const encoded_address = encodeURIComponent(`${shop.name}, ${shop.address}`);
+        shop_map_element.src = `https://maps.google.com/maps?q=${encoded_address}&t=&z=14&ie=UTF8&iwloc=B&output=embed`;
+
         const shop_expand_button = document.createElement('expand');
         shop_expand_button.addEventListener('click', e => {
             shop.element.classList.toggle("expanded");
@@ -68,6 +72,7 @@ async function fetch_json(url) {
         shop_element.appendChild(shop_tags_element);
         shop_element.appendChild(shop_address_element);
         shop_element.appendChild(shop_websites_element);
+        shop_element.appendChild(shop_map_element);
         shop_element.appendChild(shop_expand_button);
         shops_element.appendChild(shop_element);
     }
