@@ -1,85 +1,85 @@
 {
-    "accessory": {
-        "name": "Accessoire"
+    "accessories": {
+        "name": "Accessoires"
     },
-    "bag": {
-        "implies": "accessory",
-        "name": "Sac"
+    "bags": {
+        "implies": "accessories",
+        "name": "Sacs"
     },
     "bottom_underwear": {
         "implies": "underwear",
         "name": "Culottes"
     },
-    "bottom": {
+    "bottoms": {
         "name": "Bas"
     },
-    "bra": {
+    "bras": {
         "implies": "underwear",
-        "name": "Soutien-gorge"
+        "name": "Soutiens-gorges"
     },
-    "coat": {
-        "name": "Manteau"
+    "coats": {
+        "name": "Manteaux"
     },
-    "dress": {
-        "name": "Robe"
+    "dresses": {
+        "name": "Robes"
     },
     "gloves": {
-        "implies": "accessory",
+        "implies": "accessories",
         "name": "Gants"
     },
-    "hat": {
-        "implies": "accessory",
-        "name": "Chapeau"
+    "hats": {
+        "implies": "accessories",
+        "name": "Chapeaux"
     },
-    "jacket": {
-        "implies": "top",
-        "name": "Veste"
+    "jackets": {
+        "implies": "tops",
+        "name": "Vestes"
     },
     "jeans": {
         "implies": "pants",
-        "name": "Jean"
+        "name": "Jeans"
     },
     "overalls": {
-        "implies": "bottom",
-        "name": "Salopette"
+        "implies": "bottoms",
+        "name": "Salopettes"
     },
     "pants": {
-        "implies": "bottom",
-        "name": "Pantalon"
+        "implies": "bottoms",
+        "name": "Pantalons"
     },
-    "scarf": {
-        "implies": "accessory",
-        "name": "Écharpe"
+    "scarves": {
+        "implies": "accessories",
+        "name": "Écharpes"
     },
-    "shirt": {
-        "implies": "top",
-        "name": "Chemise"
+    "shirts": {
+        "implies": "tops",
+        "name": "Chemises"
     },
     "shoes": {
         "name": "Chaussures"
     },
-    "skirt": {
-        "implies": "bottom",
-        "name": "Jupe"
+    "skirts": {
+        "implies": "bottoms",
+        "name": "Jupes"
     },
     "socks": {
         "name": "Chaussettes"
     },
-    "sweater": {
-        "implies": "top",
-        "name": "Pull"
+    "sweaters": {
+        "implies": "tops",
+        "name": "Pulls"
     },
     "swimwear": {
-        "name": "Maillot de bain"
+        "name": "Maillots de bain"
     },
-    "top": {
-        "name": "Haut"
+    "tops": {
+        "name": "Hauts"
     },
-    "tshirt": {
-        "implies": "top",
-        "name": "T-shirt"
+    "tshirts": {
+        "implies": "tops",
+        "name": "T-shirts"
     },
     "underwear": {
-        "name": "Sous-vêtement"
+        "name": "Sous-vêtements"
     }
 }

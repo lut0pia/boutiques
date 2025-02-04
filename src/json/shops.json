@@ -5,10 +5,10 @@
         "address": "1 Bd du Temple, 75003 Paris",
         "websites": ["https://therollingshop.com/"],
         "items": {
-            "top": {},
-            "bottom": {},
+            "tops": {},
+            "bottoms": {},
             "overalls": {},
-            "coat": {}
+            "coats": {}
         }
     },
     {
@@ -16,10 +16,10 @@
         "tags": ["chain", "thrift"],
         "address": "23 Rue du Faubourg du Temple, 75010 Paris",
         "items": {
-            "top": {},
-            "bottom": {},
-            "scarf": {},
-            "dress": {},
+            "tops": {},
+            "bottoms": {},
+            "scarves": {},
+            "dresses": {},
             "overalls": {}
         }
     },
@@ -29,12 +29,12 @@
         "address": "23 Rue des Archives, 75004 Paris",
         "websites": ["https://www.instagram.com/roganel75004/"],
         "items": {
-            "top": {},
+            "tops": {},
             "pants": {},
-            "coat": {},
-            "bag": {},
+            "coats": {},
+            "bags": {},
             "gloves": {},
-            "scarf": {}
+            "scarves": {}
         }
     },
     {
@@ -46,9 +46,9 @@
             "overalls": {},
             "shoes": {},
             "socks": {},
-            "top": {},
-            "bottom": {},
-            "bag": {},
+            "tops": {},
+            "bottoms": {},
+            "bags": {},
             "bottom_underwear": {}
         }
     },
@@ -58,8 +58,8 @@
         "address": "97 Rue Oberkampf, 75011 Paris",
         "websites": ["https://www.misericordia.shop/"],
         "items": {
-            "top": {},
-            "bottom": {}
+            "tops": {},
+            "bottoms": {}
         }
     },
     {
@@ -120,7 +120,7 @@
         "address": "3 Rue Sainte-Croix de la Bretonnerie, 75004 Paris",
         "websites": ["http://www.cotondoux.com/"],
         "items": {
-            "shirt": {},
+            "shirts": {},
             "socks": {}
         }
     },
@@ -129,8 +129,8 @@
         "tags": ["japanese"],
         "address": "20 Rue du Pont aux Choux, 75003 Paris",
         "items": {
-            "top": {},
-            "bottom": {}
+            "tops": {},
+            "bottoms": {}
         }
     }
 ]
