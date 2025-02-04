@@ -12,6 +12,9 @@ async function fetch_json(url) {
         shop.tags = shop.tags || [];
         shop.items = shop.items || {};
         shop.websites = shop.websites || [];
+
+        // Create search string
+        shop.search_string = `${shop.name} ${shop.address}`.toLowerCase();
         
         // Fill implicit item information
         // TODO: Handle prices
@@ -116,6 +119,7 @@ async function fetch_json(url) {
 
     const search = () => {
         const search_text = search_text_element.value;
+        const search_terms = search_text.toLowerCase().split(" ");
         let wanted_tags = [];
         for(let tag_id of Object.keys(tags)) {
             if(tags[tag_id].input.checked) {
@@ -130,7 +134,7 @@ async function fetch_json(url) {
         }
         for(let shop of shops) {
             shop.element.classList.remove('filtered');
-            if(!shop.name.toLowerCase().includes(search_text.toLowerCase())) {
+            if(!search_terms.every(t => shop.search_string.includes(t))) {
                 continue;
             }
             if(!wanted_tags.every(t => shop.tags.includes(t))) {
