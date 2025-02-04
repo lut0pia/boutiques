@@ -1,5 +1,9 @@
 {
+    "accessory": {
+        "name": "Accessoire"
+    },
     "bag": {
+        "implies": "accessory",
         "name": "Sac"
     },
     "bottom_underwear": {
@@ -20,9 +24,11 @@
         "name": "Robe"
     },
     "gloves": {
+        "implies": "accessory",
         "name": "Gants"
     },
     "hat": {
+        "implies": "accessory",
         "name": "Chapeau"
     },
     "jacket": {
@@ -42,6 +48,7 @@
         "name": "Pantalon"
     },
     "scarf": {
+        "implies": "accessory",
         "name": "Écharpe"
     },
     "shirt": {
