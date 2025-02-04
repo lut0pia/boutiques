@@ -109,10 +109,8 @@
         "address": "41 Rue des Petits Champs, 75001 Paris",
         "items": {
             "gloves": {
-                "price": {
-                    "min": 45,
-                    "max": 130
-                }
+                "min_price": 45,
+                "max_price": 130
             }
         }
     },

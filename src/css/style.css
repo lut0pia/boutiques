@@ -7,15 +7,24 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-#search_text {
-  border: solid 1px #4989ee;
+fieldset {
+  border: 1px #4989ee solid;
+  display: block;
   border-radius: 10px;
+  margin-top: 10px;
   padding: 5px;
-  width: calc(100% - 12px);
-  margin-bottom: 4px;
 }
 
-#search_tags tag {
+fieldset legend {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#search_text {
+  width: 100%;
+}
+
+#search_tags tag, #search_items item {
   display: inline-block;
   margin: 2px;
   padding: 5px 8px;
@@ -23,7 +32,7 @@ body {
   border-radius: 10px;
 }
 
-#search_tags input {
+#search_tags input, #search_items input {
   margin-right: 5px;
 }
 
