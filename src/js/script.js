@@ -94,6 +94,7 @@ async function fetch_json(url) {
         for(let website of shop.websites) {
             const shop_website_element = document.createElement('a');
             shop_website_element.innerText =  shop_website_element.href = website;
+            shop_website_element.target = '_blank';
             shop_websites_element.appendChild(shop_website_element);
         }
 
