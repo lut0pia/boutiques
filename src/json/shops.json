@@ -12,18 +12,6 @@
         }
     },
     {
-        "name": "Kiloshop République",
-        "tags": ["chain", "thrift"],
-        "address": "23 Rue du Faubourg du Temple, 75010 Paris",
-        "items": {
-            "tops": {},
-            "bottoms": {},
-            "scarves": {},
-            "dresses": {},
-            "overalls": {}
-        }
-    },
-    {
         "name": "Roganel",
         "tags": ["british"],
         "address": "23 Rue des Archives, 75004 Paris",
