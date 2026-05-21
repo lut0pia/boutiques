@@ -120,5 +120,21 @@
             "tops": {},
             "bottoms": {}
         }
+    },
+    {
+        "name": "La Blouse de Lyon",
+        "tags": ["madeinfrance", "workwear"],
+        "address": "21 Rue Gérando, 75009 Paris",
+        "websites": ["https://www.lablousedelyon.com/"],
+        "items": {
+            "pants": {},
+            "overalls": {},
+            "jackets": {},
+            "sweaters": {},
+            "scarves": {},
+            "hats": {},
+            "socks": {},
+            "shoes": {}
+        }
     }
 ]
