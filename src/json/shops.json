@@ -146,5 +146,39 @@
             "accessories": {},
             "underwear": {}
         }
+    },
+    {
+        "name": "Chinemachine",
+        "tags": ["thrift"],
+        "address": "100 R. des Martyrs, 75018 Paris",
+        "websites": ["http://www.chinemachinevintage.com/"],
+        "items": {
+            "pants": {},
+            "shirts": {},
+            "skirts": {}
+        }
+    },
+    {
+        "name": "BIS Boutique Solidaire",
+        "tags": ["thrift"],
+        "address": "7 Bd du Temple, 75003 Paris",
+        "websites": ["http://www.bisboutiquesolidaire.fr/"],
+        "items": {
+            "pants": {},
+            "shirts": {},
+            "skirts": {}
+        }
+    },
+    {
+        "name": "Léopoldine Chateau",
+        "tags": ["madeinfrance", "creators"],
+        "address": "18 Rue Durantin, 75018 Paris",
+        "websites": ["https://leopoldinechateau.fr/"]
+    },
+    {
+        "name": "Vestiaire des Parisiennes",
+        "tags": ["madeinfrance", "creators"],
+        "address": "5 Rue Houdon, 75018 Paris",
+        "websites": ["https://vestiairedesparisiennes.com/"]
     }
 ]
