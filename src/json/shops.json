@@ -136,5 +136,15 @@
             "socks": {},
             "shoes": {}
         }
+    },
+    {
+        "name": "Les Baisers de Vénus",
+        "tags": ["sexy"],
+        "address": "27 Rue Jean-Pierre Timbaud, 75011 Paris",
+        "websites": ["http://lesbaisersdevenus.fr/"],
+        "items": {
+            "accessories": {},
+            "underwear": {}
+        }
     }
 ]
