@@ -34,5 +34,9 @@
     "sexy": {
         "icon": "😏",
         "name": "Sexy"
+    },
+    "workwear": {
+        "icon":"⚒",
+        "name": "Vêtements de travail"
     }
 }
